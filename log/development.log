@@ -1,0 +1,1065 @@
+Started GET "/" for ::1 at 2020-09-27 23:35:31 +0530
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "testChall_development" does not exist
+):
+  
+activerecord (6.0.3.3) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.3) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.3) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.3) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (225.6ms)[0m  [1m[35mCREATE DATABASE "testChall_development" ENCODING = 'unicode'[0m
+  [1m[35m (122.7ms)[0m  [1m[35mCREATE DATABASE "testChall_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2020-09-27 23:38:43 +0530
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2020-09-27 23:38:47 +0530
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(497714478235191315)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHomes (20200927180838)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "homes" ("id" bigserial primary key, "index" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200927180838"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-09-27 18:08:48.153652"], ["updated_at", "2020-09-27 18:08:48.153652"]]
+  [1m[35m (11.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(497714478235191315)[0m
+Started GET "/" for ::1 at 2020-09-27 23:38:48 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/shah/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/shah/.rvm/gems/ruby-2.7.0/gems/railties-6.0.3.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.7ms | Allocations: 183)
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 855)
+
+
+Started GET "/" for ::1 at 2020-09-27 23:40:15 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 76)
+Completed 200 OK in 1774ms (Views: 1763.4ms | ActiveRecord: 0.0ms | Allocations: 19486)
+
+
+Started GET "/" for ::1 at 2020-09-27 23:42:07 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 5)
+Completed 200 OK in 149ms (Views: 148.0ms | ActiveRecord: 0.0ms | Allocations: 1782)
+
+
+Started GET "/" for ::1 at 2020-09-27 23:42:14 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+Completed 200 OK in 118ms (Views: 117.6ms | ActiveRecord: 0.0ms | Allocations: 1776)
+
+
+Started GET "/" for ::1 at 2020-09-27 23:42:16 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 124ms (Views: 123.9ms | ActiveRecord: 0.0ms | Allocations: 1765)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-27 23:45:19 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 39.1ms | Allocations: 200)
+Started GET "/" for 127.0.0.1 at 2020-09-27 23:45:20 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 959ms (Views: 904.1ms | ActiveRecord: 0.0ms | Allocations: 9468)
+
+
+Completed 200 OK in 216ms (Views: 215.3ms | ActiveRecord: 0.0ms | Allocations: 3280)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-27 23:45:28 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 91)
+Completed 200 OK in 234ms (Views: 220.0ms | ActiveRecord: 0.0ms | Allocations: 2738)
+
+
+Started GET "/" for ::1 at 2020-09-27 23:45:42 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 88)
+Completed 200 OK in 189ms (Views: 177.9ms | ActiveRecord: 0.0ms | Allocations: 2728)
+
+
+Started GET "/" for ::1 at 2020-09-27 23:45:50 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 87)
+Completed 200 OK in 173ms (Views: 162.8ms | ActiveRecord: 0.0ms | Allocations: 2716)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(497714478235191315)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200927181915)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (79.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "data" json DEFAULT '"{}"' NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200927181915"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(497714478235191315)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(497714478235191315)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200927182454)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(497714478235191315)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(497714478235191315)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200927181915)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200927181915"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(497714478235191315)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(497714478235191315)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200927182454)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200927182454"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(497714478235191315)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(497714478235191315)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200927182454)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200927182454"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(497714478235191315)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(497714478235191315)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200927182454)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "data" json DEFAULT '"{}"' NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200927182454"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(497714478235191315)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"a\":\"Hello\"}"], ["created_at", "2020-09-27 18:33:14.204202"], ["updated_at", "2020-09-27 18:33:14.204202"]]
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"a\":\"Hello\",\"b\":{\"hello\":\"test\"}}"], ["created_at", "2020-09-27 18:33:45.531222"], ["updated_at", "2020-09-27 18:33:45.531222"]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-09-28 00:06:28 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2179)
+
+
+  
+NameError (uninitialized constant Net::HTTP):
+  
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for ::1 at 2020-09-28 00:07:07 +0530
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2141)
+
+
+  
+NameError (uninitialized constant Net::HTTP):
+  
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for ::1 at 2020-09-28 00:07:51 +0530
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2135)
+
+
+  
+NameError (uninitialized constant Net::HTTP):
+  
+app/controllers/home_controller.rb:4:in `index'
+Started GET "/" for ::1 at 2020-09-28 00:09:34 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1472ms (ActiveRecord: 0.0ms | Allocations: 1929)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007f331c853fa8>
+Did you mean?  try):
+  
+app/controllers/home_controller.rb:10:in `index'
+Started GET "/" for ::1 at 2020-09-28 00:10:44 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1267ms (ActiveRecord: 0.0ms | Allocations: 1158)
+
+
+  
+JSON::ParserError (783: unexpected token at '<html>
+<head>
+<title>Uh oh, something bad happened</title>
+</head>
+<body align='center'>
+<h1 align='center'>Uh oh, something bad happened</h1>
+<a class="twitter-timeline" data-width="450" data-height="700" data-theme="light" href="https://twitter.com/randomapi">Tweets by randomapi</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8" type="c7444a5deb0a2bcffbab5be7-text/javascript"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="c7444a5deb0a2bcffbab5be7-|49" defer=""></script></body>
+</html>
+'):
+  
+app/controllers/home_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2020-09-28 00:11:08 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ (pry):14:in `index'
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "\"{\\\"results\\\":[{\\\"gender\\\":\\\"female\\\",\\\"name\\\":{\\\"title\\\":\\\"Ms\\\",\\\"first\\\":\\\"Nina\\\",\\\"last\\\":\\\"Adam\\\"},\\\"location\\\":{\\\"street\\\":{\\\"number\\\":6293,\\\"name\\\":\\\"Rue des Écoles\\\"},\\\"city\\\":\\\"Le Mans\\\",\\\"state\\\":\\\"Puy-de-Dôme\\\",\\\"country\\\":\\\"France\\\",\\\"postcode\\\":94615,\\\"coordinates\\\":{\\\"latitude\\\":\\\"2.3359\\\",\\\"longitude\\\":\\\"106.2777\\\"},\\\"timezone\\\":{\\\"offset\\\":\\\"-12:00\\\",\\\"description\\\":\\\"Eniwetok, Kwajalein\\\"}},\\\"email\\\":\\\"nina.adam@example.com\\\",\\\"login\\\":{\\\"uuid\\\":\\\"d0a0ab6c-fb7c-456f-bafb-e921cb1ab1c1\\\",\\\"username\\\":\\\"sadtiger612\\\",\\\"password\\\":\\\"wolf359\\\",\\\"salt\\\":\\\"SDXuy0UN\\\",\\\"md5\\\":\\\"9653f89ed59655d7073688eb8dd37a9e\\\",\\\"sha1\\\":\\\"34996ab9dec8796d2ee3b19058a93bb2b5afa66d\\\",\\\"sha256\\\":\\\"66d36a6fba77be0bf6205b4bb1580c484e0a7772e053d37df04a8f3d03a8ffb1\\\"},\\\"dob\\\":{\\\"date\\\":\\\"1952-02-10T14:23:00.017Z\\\",\\\"age\\\":68},\\\"registered\\\":{\\\"date\\\":\\\"2003-10-09T06:24:52.233Z\\\",\\\"age\\\":17},\\\"phone\\\":\\\"04-06-70-80-65\\\",\\\"cell\\\":\\\"06-19-47-59-83\\\",\\\"id\\\":{\\\"name\\\":\\\"INSEE\\\",\\\"value\\\":\\\"2NNaN83264889 75\\\"},\\\"picture\\\":{\\\"large\\\":\\\"https://randomuser.me/api/portraits/women/75.jpg\\\",\\\"medium\\\":\\\"https://randomuser.me/api/portraits/med/women/75.jpg\\\",\\\"thumbnail\\\":\\\"https://randomuser.me/api/portraits/thumb/women/75.jpg\\\"},\\\"nat\\\":\\\"FR\\\"}],\\\"info\\\":{\\\"seed\\\":\\\"5bf1d7d88729ee5a\\\",\\\"results\\\":1,\\\"page\\\":1,\\\"version\\\":\\\"1.3\\\"}}\""], ["created_at", "2020-09-27 18:43:32.156908"], ["updated_at", "2020-09-27 18:43:32.156908"]]
+  ↳ (pry):14:in `index'
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (pry):14:in `index'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ (pry):15:in `index'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"results\":[{\"gender\":\"female\",\"name\":{\"title\":\"Ms\",\"first\":\"Nina\",\"last\":\"Adam\"},\"location\":{\"street\":{\"number\":6293,\"name\":\"Rue des Écoles\"},\"city\":\"Le Mans\",\"state\":\"Puy-de-Dôme\",\"country\":\"France\",\"postcode\":94615,\"coordinates\":{\"latitude\":\"2.3359\",\"longitude\":\"106.2777\"},\"timezone\":{\"offset\":\"-12:00\",\"description\":\"Eniwetok, Kwajalein\"}},\"email\":\"nina.adam@example.com\",\"login\":{\"uuid\":\"d0a0ab6c-fb7c-456f-bafb-e921cb1ab1c1\",\"username\":\"sadtiger612\",\"password\":\"wolf359\",\"salt\":\"SDXuy0UN\",\"md5\":\"9653f89ed59655d7073688eb8dd37a9e\",\"sha1\":\"34996ab9dec8796d2ee3b19058a93bb2b5afa66d\",\"sha256\":\"66d36a6fba77be0bf6205b4bb1580c484e0a7772e053d37df04a8f3d03a8ffb1\"},\"dob\":{\"date\":\"1952-02-10T14:23:00.017Z\",\"age\":68},\"registered\":{\"date\":\"2003-10-09T06:24:52.233Z\",\"age\":17},\"phone\":\"04-06-70-80-65\",\"cell\":\"06-19-47-59-83\",\"id\":{\"name\":\"INSEE\",\"value\":\"2NNaN83264889 75\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/75.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/75.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/75.jpg\"},\"nat\":\"FR\"}],\"info\":{\"seed\":\"5bf1d7d88729ee5a\",\"results\":1,\"page\":1,\"version\":\"1.3\"}}"], ["created_at", "2020-09-27 18:43:47.119804"], ["updated_at", "2020-09-27 18:43:47.119804"]]
+  ↳ (pry):15:in `index'
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (pry):15:in `index'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ (pry):16:in `index'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "[{\"gender\":\"female\",\"name\":{\"title\":\"Ms\",\"first\":\"Nina\",\"last\":\"Adam\"},\"location\":{\"street\":{\"number\":6293,\"name\":\"Rue des Écoles\"},\"city\":\"Le Mans\",\"state\":\"Puy-de-Dôme\",\"country\":\"France\",\"postcode\":94615,\"coordinates\":{\"latitude\":\"2.3359\",\"longitude\":\"106.2777\"},\"timezone\":{\"offset\":\"-12:00\",\"description\":\"Eniwetok, Kwajalein\"}},\"email\":\"nina.adam@example.com\",\"login\":{\"uuid\":\"d0a0ab6c-fb7c-456f-bafb-e921cb1ab1c1\",\"username\":\"sadtiger612\",\"password\":\"wolf359\",\"salt\":\"SDXuy0UN\",\"md5\":\"9653f89ed59655d7073688eb8dd37a9e\",\"sha1\":\"34996ab9dec8796d2ee3b19058a93bb2b5afa66d\",\"sha256\":\"66d36a6fba77be0bf6205b4bb1580c484e0a7772e053d37df04a8f3d03a8ffb1\"},\"dob\":{\"date\":\"1952-02-10T14:23:00.017Z\",\"age\":68},\"registered\":{\"date\":\"2003-10-09T06:24:52.233Z\",\"age\":17},\"phone\":\"04-06-70-80-65\",\"cell\":\"06-19-47-59-83\",\"id\":{\"name\":\"INSEE\",\"value\":\"2NNaN83264889 75\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/75.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/75.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/75.jpg\"},\"nat\":\"FR\"}]"], ["created_at", "2020-09-27 18:44:04.674495"], ["updated_at", "2020-09-27 18:44:04.674495"]]
+  ↳ (pry):16:in `index'
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (pry):16:in `index'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ (pry):17:in `index'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Ms\",\"first\":\"Nina\",\"last\":\"Adam\"},\"location\":{\"street\":{\"number\":6293,\"name\":\"Rue des Écoles\"},\"city\":\"Le Mans\",\"state\":\"Puy-de-Dôme\",\"country\":\"France\",\"postcode\":94615,\"coordinates\":{\"latitude\":\"2.3359\",\"longitude\":\"106.2777\"},\"timezone\":{\"offset\":\"-12:00\",\"description\":\"Eniwetok, Kwajalein\"}},\"email\":\"nina.adam@example.com\",\"login\":{\"uuid\":\"d0a0ab6c-fb7c-456f-bafb-e921cb1ab1c1\",\"username\":\"sadtiger612\",\"password\":\"wolf359\",\"salt\":\"SDXuy0UN\",\"md5\":\"9653f89ed59655d7073688eb8dd37a9e\",\"sha1\":\"34996ab9dec8796d2ee3b19058a93bb2b5afa66d\",\"sha256\":\"66d36a6fba77be0bf6205b4bb1580c484e0a7772e053d37df04a8f3d03a8ffb1\"},\"dob\":{\"date\":\"1952-02-10T14:23:00.017Z\",\"age\":68},\"registered\":{\"date\":\"2003-10-09T06:24:52.233Z\",\"age\":17},\"phone\":\"04-06-70-80-65\",\"cell\":\"06-19-47-59-83\",\"id\":{\"name\":\"INSEE\",\"value\":\"2NNaN83264889 75\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/75.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/75.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/75.jpg\"},\"nat\":\"FR\"}"], ["created_at", "2020-09-27 18:44:12.417868"], ["updated_at", "2020-09-27 18:44:12.417868"]]
+  ↳ (pry):17:in `index'
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (pry):17:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ (pry):18:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ (pry):22:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ (pry):24:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ (pry):29:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ (pry):31:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ (pry):35:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ (pry):37:in `index'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ (pry):38:in `index'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Ms\",\"first\":\"Nina\",\"last\":\"Adam\"},\"location\":{\"street\":{\"number\":6293,\"name\":\"Rue des Écoles\"},\"city\":\"Le Mans\",\"state\":\"Puy-de-Dôme\",\"country\":\"France\",\"postcode\":94615,\"coordinates\":{\"latitude\":\"2.3359\",\"longitude\":\"106.2777\"},\"timezone\":{\"offset\":\"-12:00\",\"description\":\"Eniwetok, Kwajalein\"}},\"email\":\"nina.adam@example.com\",\"login\":{\"uuid\":\"d0a0ab6c-fb7c-456f-bafb-e921cb1ab1c1\",\"username\":\"sadtiger612\",\"password\":\"wolf359\",\"salt\":\"SDXuy0UN\",\"md5\":\"9653f89ed59655d7073688eb8dd37a9e\",\"sha1\":\"34996ab9dec8796d2ee3b19058a93bb2b5afa66d\",\"sha256\":\"66d36a6fba77be0bf6205b4bb1580c484e0a7772e053d37df04a8f3d03a8ffb1\"},\"dob\":{\"date\":\"1952-02-10T14:23:00.017Z\",\"age\":68},\"registered\":{\"date\":\"2003-10-09T06:24:52.233Z\",\"age\":17},\"phone\":\"04-06-70-80-65\",\"cell\":\"06-19-47-59-83\",\"id\":{\"name\":\"INSEE\",\"value\":\"2NNaN83264889 75\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/75.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/75.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/75.jpg\"},\"nat\":\"FR\"}"], ["created_at", "2020-09-27 18:46:59.164720"], ["updated_at", "2020-09-27 18:46:59.164720"]]
+  ↳ (pry):38:in `index'
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (pry):38:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 17.5ms | Allocations: 94)
+Completed 200 OK in 427002ms (Views: 474.7ms | ActiveRecord: 49.6ms | Allocations: 429411)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-09-28 00:20:00 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 9116ms (Views: 112.3ms | ActiveRecord: 0.0ms | Allocations: 12137)
+
+
+Started GET "/" for ::1 at 2020-09-28 00:20:12 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+Completed 200 OK in 6519ms (Views: 113.8ms | ActiveRecord: 0.0ms | Allocations: 12137)
+
+
+Started GET "/" for ::1 at 2020-09-28 00:20:33 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Mrs\",\"first\":\"Madison\",\"last\":\"Margaret\"},\"location\":{\"street\":{\"number\":3999,\"name\":\"Main St\"},\"city\":\"Inverness\",\"state\":\"Nova Scotia\",\"country\":\"Canada\",\"postcode\":\"L4D 7D1\",\"coordinates\":{\"latitude\":\"-65.6325\",\"longitude\":\"119.3958\"},\"timezone\":{\"offset\":\"+5:30\",\"description\":\"Bombay, Calcutta, Madras, New Delhi\"}},\"email\":\"madison.margaret@example.com\",\"login\":{\"uuid\":\"ba8b6978-7f77-42fd-9bc5-c051222072ca\",\"username\":\"goldenrabbit125\",\"password\":\"shopper\",\"salt\":\"9BEi82MR\",\"md5\":\"e8007af2a0c31009df5e5a96f945e0ec\",\"sha1\":\"37a58e2b0d792a985518edee11190e9356d78ebb\",\"sha256\":\"d944ffaabc19f7dd86a747acf08208e1aeb7336696d2a658690002c4f3173b99\"},\"dob\":{\"date\":\"1963-04-07T22:40:08.355Z\",\"age\":57},\"registered\":{\"date\":\"2003-10-05T22:07:16.318Z\",\"age\":17},\"phone\":\"110-417-6190\",\"cell\":\"635-955-7292\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/14.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/14.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/14.jpg\"},\"nat\":\"CA\"}"], ["created_at", "2020-09-27 18:50:35.243021"], ["updated_at", "2020-09-27 18:50:35.243021"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 235)
+Completed 200 OK in 1818ms (Views: 436.2ms | ActiveRecord: 10.1ms | Allocations: 13568)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-09-28 00:20:44 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Veeti\",\"last\":\"Tuomala\"},\"location\":{\"street\":{\"number\":9043,\"name\":\"Esplanadi\"},\"city\":\"Pyhäntä\",\"state\":\"Northern Ostrobothnia\",\"country\":\"Finland\",\"postcode\":98633,\"coordinates\":{\"latitude\":\"-7.9669\",\"longitude\":\"-80.3348\"},\"timezone\":{\"offset\":\"+9:00\",\"description\":\"Tokyo, Seoul, Osaka, Sapporo, Yakutsk\"}},\"email\":\"veeti.tuomala@example.com\",\"login\":{\"uuid\":\"eeee1b6f-6a0d-405d-97e2-e422988fa521\",\"username\":\"whitedog921\",\"password\":\"howell\",\"salt\":\"AOcZcvZh\",\"md5\":\"67cb70b9bb695787e29146314999e3e6\",\"sha1\":\"d15f667e2e4bb93bebf617e7146c1318c74eb18b\",\"sha256\":\"6638c7cfb7f3b93068d0eda812ff1607bff68506a049b7cc70f63d8fd691e937\"},\"dob\":{\"date\":\"1960-10-19T01:54:32.518Z\",\"age\":60},\"registered\":{\"date\":\"2004-07-14T08:45:42.079Z\",\"age\":16},\"phone\":\"06-559-631\",\"cell\":\"041-869-01-77\",\"id\":{\"name\":\"HETU\",\"value\":\"NaNNA231undefined\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/16.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/16.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/16.jpg\"},\"nat\":\"FI\"}"], ["created_at", "2020-09-27 18:50:45.094644"], ["updated_at", "2020-09-27 18:50:45.094644"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 1247ms (Views: 257.2ms | ActiveRecord: 8.8ms | Allocations: 6585)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-09-28 00:22:11 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Miss\",\"first\":\"Florence\",\"last\":\"Gagnon\"},\"location\":{\"street\":{\"number\":3617,\"name\":\"Duke St\"},\"city\":\"Lasalle\",\"state\":\"Manitoba\",\"country\":\"Canada\",\"postcode\":\"B7G 9U3\",\"coordinates\":{\"latitude\":\"-61.1010\",\"longitude\":\"25.7274\"},\"timezone\":{\"offset\":\"+5:00\",\"description\":\"Ekaterinburg, Islamabad, Karachi, Tashkent\"}},\"email\":\"florence.gagnon@example.com\",\"login\":{\"uuid\":\"753a5683-02e9-4101-9596-331a81ac1b68\",\"username\":\"greenduck282\",\"password\":\"mandrake\",\"salt\":\"i6Jebfgw\",\"md5\":\"df4d96e5193ccea44f49f1f1f8f830d9\",\"sha1\":\"4a04bee9a7faa2ba087b0c1e54e1d5e859f2c381\",\"sha256\":\"107a98f1f5a7452cea58d822699a1b5bd04c2fd599aae0f9c6bf6c73696f6ab3\"},\"dob\":{\"date\":\"1950-06-19T08:10:14.906Z\",\"age\":70},\"registered\":{\"date\":\"2013-11-10T08:12:30.662Z\",\"age\":7},\"phone\":\"067-174-5408\",\"cell\":\"725-658-8107\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/48.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/48.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/48.jpg\"},\"nat\":\"CA\"}"], ["created_at", "2020-09-27 18:52:12.147551"], ["updated_at", "2020-09-27 18:52:12.147551"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 864ms (Views: 146.6ms | ActiveRecord: 5.0ms | Allocations: 6592)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:23:37 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Roger\",\"last\":\"Murray\"},\"location\":{\"street\":{\"number\":7348,\"name\":\"E North St\"},\"city\":\"Fort Lauderdale\",\"state\":\"Maryland\",\"country\":\"United States\",\"postcode\":30181,\"coordinates\":{\"latitude\":\"80.6296\",\"longitude\":\"-171.2793\"},\"timezone\":{\"offset\":\"-4:00\",\"description\":\"Atlantic Time (Canada), Caracas, La Paz\"}},\"email\":\"roger.murray@example.com\",\"login\":{\"uuid\":\"da4b3563-a489-4ffd-bddd-ce4f013dbb6e\",\"username\":\"ticklishswan831\",\"password\":\"star69\",\"salt\":\"PrFJ972D\",\"md5\":\"073559aeaa9a12faa7a3cbf23dc19ec6\",\"sha1\":\"fae62b59dbc5fcef883e7e803705d3391980c8d6\",\"sha256\":\"508efe560f42683aefbffe0e2bf45cb1654c7c7dcaf899df8fc23998387eaf9c\"},\"dob\":{\"date\":\"1992-04-04T02:14:16.536Z\",\"age\":28},\"registered\":{\"date\":\"2006-11-20T06:01:05.538Z\",\"age\":14},\"phone\":\"(012)-867-4927\",\"cell\":\"(786)-956-3372\",\"id\":{\"name\":\"SSN\",\"value\":\"256-92-4619\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/97.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/97.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/97.jpg\"},\"nat\":\"US\"}"], ["created_at", "2020-09-27 18:53:39.561497"], ["updated_at", "2020-09-27 18:53:39.561497"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 292.1ms | Allocations: 98230)
+Completed 500 Internal Server Error in 1830ms (ActiveRecord: 11.1ms | Allocations: 107709)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `result' for #<#<Class:0x00007f4d5c948378>:0x00007f4d5c953980>
+Did you mean?  @result):
+    22: 	<br>
+    23: 	<br>
+    24: 	For Debug:
+    25: 	<%= result["results"][0] %>
+    26: <% end %>
+  
+app/views/home/index.html.erb:25
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:23:47 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Miss\",\"first\":\"Sylke\",\"last\":\"Slagman\"},\"location\":{\"street\":{\"number\":8381,\"name\":\"Heuf\"},\"city\":\"Ingber\",\"state\":\"Groningen\",\"country\":\"Netherlands\",\"postcode\":71853,\"coordinates\":{\"latitude\":\"37.0923\",\"longitude\":\"12.6235\"},\"timezone\":{\"offset\":\"-2:00\",\"description\":\"Mid-Atlantic\"}},\"email\":\"sylke.slagman@example.com\",\"login\":{\"uuid\":\"ea46db65-ab1d-4372-8572-fedce351ab05\",\"username\":\"blackzebra921\",\"password\":\"johnny5\",\"salt\":\"Re3oCjGt\",\"md5\":\"43024033da9f97925b95277351060004\",\"sha1\":\"4c5e2694b5a2148ff7e59141548ff70608927203\",\"sha256\":\"178d7a6234c4a8dc8ba87bb26efb7fa61f033c4316469fa214dcf1407525c2dd\"},\"dob\":{\"date\":\"1988-12-11T09:35:01.923Z\",\"age\":32},\"registered\":{\"date\":\"2016-05-27T03:08:52.105Z\",\"age\":4},\"phone\":\"(231)-670-3798\",\"cell\":\"(369)-085-6735\",\"id\":{\"name\":\"BSN\",\"value\":\"45569937\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/90.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/90.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/90.jpg\"},\"nat\":\"NL\"}"], ["created_at", "2020-09-27 18:53:48.121675"], ["updated_at", "2020-09-27 18:53:48.121675"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 389.2ms | Allocations: 97648)
+Completed 500 Internal Server Error in 1457ms (ActiveRecord: 9.1ms | Allocations: 102757)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `result' for #<#<Class:0x00007f4d5c948378>:0x00005629c6459b10>
+Did you mean?  @result):
+    22: 	<br>
+    23: 	<br>
+    24: 	For Debug:
+    25: 	<%= @result["results"][0] %>
+    26: <% end %>
+  
+app/views/home/index.html.erb:25
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:24:50 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Miss\",\"first\":\"Greta\",\"last\":\"Brons\"},\"location\":{\"street\":{\"number\":7383,\"name\":\"Betzstraat\"},\"city\":\"Sebaldeburen\",\"state\":\"Utrecht\",\"country\":\"Netherlands\",\"postcode\":59726,\"coordinates\":{\"latitude\":\"38.4302\",\"longitude\":\"43.4246\"},\"timezone\":{\"offset\":\"-9:00\",\"description\":\"Alaska\"}},\"email\":\"greta.brons@example.com\",\"login\":{\"uuid\":\"5141b2cc-8450-4d20-b1c5-1977c4baaf96\",\"username\":\"greenbutterfly638\",\"password\":\"rudy\",\"salt\":\"rwaYlbSe\",\"md5\":\"e9684749955c25be732cf3a38b8c16c0\",\"sha1\":\"500711ab3d245a29b9e21644e00ced9a784909ba\",\"sha256\":\"2329cacbccc8ee01f7c288093353065eff9e402dee854e25caf46fb9f4013067\"},\"dob\":{\"date\":\"1969-06-24T13:00:44.584Z\",\"age\":51},\"registered\":{\"date\":\"2010-01-14T03:15:05.630Z\",\"age\":10},\"phone\":\"(276)-695-4790\",\"cell\":\"(322)-693-4962\",\"id\":{\"name\":\"BSN\",\"value\":\"88584689\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/75.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/75.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/75.jpg\"},\"nat\":\"NL\"}"], ["created_at", "2020-09-27 18:54:51.261313"], ["updated_at", "2020-09-27 18:54:51.261313"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 263.1ms | Allocations: 97648)
+Completed 500 Internal Server Error in 991ms (ActiveRecord: 15.1ms | Allocations: 102748)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `result' for #<#<Class:0x00007f4d5c948378>:0x00005629c5466cd0>
+Did you mean?  @result):
+    22: 	<br>
+    23: 	<br>
+    24: 	For Debug:
+    25: 	<%= @result["results"][0] %>
+    26: <% end %>
+  
+app/views/home/index.html.erb:25
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:25:08 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Nolhan\",\"last\":\"Thomas\"},\"location\":{\"street\":{\"number\":8352,\"name\":\"Avenue Debourg\"},\"city\":\"Le Mans\",\"state\":\"Pyrénées-Orientales\",\"country\":\"France\",\"postcode\":87037,\"coordinates\":{\"latitude\":\"1.6706\",\"longitude\":\"-90.7151\"},\"timezone\":{\"offset\":\"+5:30\",\"description\":\"Bombay, Calcutta, Madras, New Delhi\"}},\"email\":\"nolhan.thomas@example.com\",\"login\":{\"uuid\":\"cfbd06cd-c37f-4855-9668-5088491f1bd5\",\"username\":\"happyleopard393\",\"password\":\"garbage\",\"salt\":\"YoC8FvuL\",\"md5\":\"ab09cc32fc208355f70ae5aab7fccbdb\",\"sha1\":\"54bf5daeaef8d0c315154f972c656700c62b8653\",\"sha256\":\"a34c76af6dda06cd8392b8f4d28e761c74fea599424455aafc052fb9f5222902\"},\"dob\":{\"date\":\"1945-10-09T17:34:18.687Z\",\"age\":75},\"registered\":{\"date\":\"2011-07-13T00:21:08.771Z\",\"age\":9},\"phone\":\"02-60-90-78-30\",\"cell\":\"06-73-08-12-46\",\"id\":{\"name\":\"INSEE\",\"value\":\"1NNaN47356113 44\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/51.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/51.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/51.jpg\"},\"nat\":\"FR\"}"], ["created_at", "2020-09-27 18:55:10.184462"], ["updated_at", "2020-09-27 18:55:10.184462"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 430.6ms | Allocations: 97422)
+Completed 500 Internal Server Error in 2143ms (ActiveRecord: 24.9ms | Allocations: 106867)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `result' for #<#<Class:0x00007feab88dafb8>:0x00007feab88d96b8>
+Did you mean?  @result):
+    22: 	<br>
+    23: 	<br>
+    24: 	For Debug:
+    25: 	<%= result["results"][0] %>
+    26: <% end %>
+  
+app/views/home/index.html.erb:25
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:25:21 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Monsieur\",\"first\":\"Helmut\",\"last\":\"Noel\"},\"location\":{\"street\":{\"number\":7687,\"name\":\"Rue des Jardins\"},\"city\":\"Bussy-sur-Moudon\",\"state\":\"Luzern\",\"country\":\"Switzerland\",\"postcode\":6889,\"coordinates\":{\"latitude\":\"-54.1814\",\"longitude\":\"-109.6501\"},\"timezone\":{\"offset\":\"+9:30\",\"description\":\"Adelaide, Darwin\"}},\"email\":\"helmut.noel@example.com\",\"login\":{\"uuid\":\"6cecb26d-9ee6-4a6a-b8ce-604cae472e4b\",\"username\":\"silvertiger479\",\"password\":\"kirby\",\"salt\":\"K36yMxPS\",\"md5\":\"f98a88896f1ddca29aaa7b5f8976c4cc\",\"sha1\":\"45623d7ee5ea488a689092ca0f4428580817379c\",\"sha256\":\"1d85e94364fa253f8e1ea5f22983b88c852721e33a9ccac77c03cb5edb490ee2\"},\"dob\":{\"date\":\"1945-08-27T02:52:35.938Z\",\"age\":75},\"registered\":{\"date\":\"2007-04-07T21:24:45.447Z\",\"age\":13},\"phone\":\"079 241 92 78\",\"cell\":\"077 987 80 79\",\"id\":{\"name\":\"AVS\",\"value\":\"756.9656.6815.85\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/79.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/79.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/79.jpg\"},\"nat\":\"CH\"}"], ["created_at", "2020-09-27 18:55:22.306580"], ["updated_at", "2020-09-27 18:55:22.306580"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 234.1ms | Allocations: 96858)
+Completed 500 Internal Server Error in 962ms (ActiveRecord: 13.6ms | Allocations: 104566)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `result' for #<#<Class:0x00007feab98f2540>:0x00007feab98f0c90>
+Did you mean?  @result):
+    22: 	<br>
+    23: 	<br>
+    24: 	For Debug:
+    25: 	<%= @result["results"][0] %>
+    26: <% end %>
+  
+app/views/home/index.html.erb:25
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:26:52 +0530
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Fred\",\"last\":\"Montgomery\"},\"location\":{\"street\":{\"number\":9417,\"name\":\"Grange Road\"},\"city\":\"Belfast\",\"state\":\"Cornwall\",\"country\":\"United Kingdom\",\"postcode\":\"WQ05 9LN\",\"coordinates\":{\"latitude\":\"14.5911\",\"longitude\":\"-38.8641\"},\"timezone\":{\"offset\":\"+5:30\",\"description\":\"Bombay, Calcutta, Madras, New Delhi\"}},\"email\":\"fred.montgomery@example.com\",\"login\":{\"uuid\":\"59bf3126-7914-4b9c-bd2d-b57f595dbfe5\",\"username\":\"blacksnake719\",\"password\":\"suckers\",\"salt\":\"CLesRMWC\",\"md5\":\"3a31f23386f3916b0234a00fa5052d41\",\"sha1\":\"03d0377501230db56b0ba277b9d1b5f461351854\",\"sha256\":\"f4982df4ed81e6dfbe210b3463c567eb5d53097599362bed8f5b574b2e47d93b\"},\"dob\":{\"date\":\"1961-08-25T00:09:52.496Z\",\"age\":59},\"registered\":{\"date\":\"2010-01-30T13:12:58.606Z\",\"age\":10},\"phone\":\"017684 83915\",\"cell\":\"0741-745-409\",\"id\":{\"name\":\"NINO\",\"value\":\"OP 06 92 04 B\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/97.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/97.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/97.jpg\"},\"nat\":\"GB\"}"], ["created_at", "2020-09-27 18:56:54.201370"], ["updated_at", "2020-09-27 18:56:54.201370"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 256.7ms | Allocations: 98825)
+Completed 500 Internal Server Error in 2068ms (ActiveRecord: 21.9ms | Allocations: 108321)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `result' for #<#<Class:0x00007fc1889ed738>:0x000056223d2ff4a8>
+Did you mean?  @result):
+    22: 	<br>
+    23: 	<br>
+    24: 	For Debug:
+    25: 	<%= result["results"][0] %>
+    26: <% end %>
+  
+app/views/home/index.html.erb:25
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:26:59 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Mrs\",\"first\":\"Chloe\",\"last\":\"Bélanger\"},\"location\":{\"street\":{\"number\":9764,\"name\":\"Concession Road 23\"},\"city\":\"Lumsden\",\"state\":\"Ontario\",\"country\":\"Canada\",\"postcode\":\"F8L 3L2\",\"coordinates\":{\"latitude\":\"-62.2425\",\"longitude\":\"125.7608\"},\"timezone\":{\"offset\":\"+6:00\",\"description\":\"Almaty, Dhaka, Colombo\"}},\"email\":\"chloe.belanger@example.com\",\"login\":{\"uuid\":\"42acf48b-799f-43e5-9f4f-1b079381ccb9\",\"username\":\"yellowbird758\",\"password\":\"darling\",\"salt\":\"KL0n6uK7\",\"md5\":\"27f9e8486c00dda44332b5500d54ad22\",\"sha1\":\"76ac78793da5798c962838c85a8be4d9b5164a05\",\"sha256\":\"7bc908541ac0adfaf16d09029517d473a1e41cb7ce2269e1764358da9789df99\"},\"dob\":{\"date\":\"1947-06-20T06:35:07.143Z\",\"age\":73},\"registered\":{\"date\":\"2010-10-23T04:55:44.447Z\",\"age\":10},\"phone\":\"250-876-5833\",\"cell\":\"065-156-4956\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/55.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/55.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/55.jpg\"},\"nat\":\"CA\"}"], ["created_at", "2020-09-27 18:57:00.423334"], ["updated_at", "2020-09-27 18:57:00.423334"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 220.9ms | Allocations: 98262)
+Completed 500 Internal Server Error in 1319ms (ActiveRecord: 5.1ms | Allocations: 103333)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `result' for #<#<Class:0x00007fc1889ed738>:0x00007fc189119e30>
+Did you mean?  @result):
+    22: 	<br>
+    23: 	<br>
+    24: 	For Debug:
+    25: 	<%= @result["results"][0] %>
+    26: <% end %>
+  
+app/views/home/index.html.erb:25
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:27:24 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Miss\",\"first\":\"Kirsten\",\"last\":\"Locher\"},\"location\":{\"street\":{\"number\":485,\"name\":\"Mühlenstraße\"},\"city\":\"Quickborn\",\"state\":\"Schleswig-Holstein\",\"country\":\"Germany\",\"postcode\":65880,\"coordinates\":{\"latitude\":\"-44.3061\",\"longitude\":\"155.9488\"},\"timezone\":{\"offset\":\"-8:00\",\"description\":\"Pacific Time (US \\u0026 Canada)\"}},\"email\":\"kirsten.locher@example.com\",\"login\":{\"uuid\":\"88420abe-954d-407c-a3d5-ca482d4807f7\",\"username\":\"greenrabbit703\",\"password\":\"skip\",\"salt\":\"tqZaEVPn\",\"md5\":\"01d4d7184a2e94d3f1e14ec5f39104a0\",\"sha1\":\"4926be9a13ca2727c6229d8f4f8e588c44582cca\",\"sha256\":\"b0af5128dcedda092f7b836693a7d708a5b6f8c0d977e7b370156478521c5007\"},\"dob\":{\"date\":\"1959-09-27T03:55:29.521Z\",\"age\":61},\"registered\":{\"date\":\"2012-01-08T19:18:20.560Z\",\"age\":8},\"phone\":\"0825-0494456\",\"cell\":\"0173-6840292\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/12.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/12.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/12.jpg\"},\"nat\":\"DE\"}"], ["created_at", "2020-09-27 18:57:26.558032"], ["updated_at", "2020-09-27 18:57:26.558032"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 34.1ms | Allocations: 357)
+Completed 200 OK in 2866ms (Views: 1061.5ms | ActiveRecord: 28.9ms | Allocations: 13655)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:29:07 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Joan\",\"last\":\"Garrido\"},\"location\":{\"street\":{\"number\":8685,\"name\":\"Calle Mota\"},\"city\":\"Orihuela\",\"state\":\"Región de Murcia\",\"country\":\"Spain\",\"postcode\":66325,\"coordinates\":{\"latitude\":\"-20.7253\",\"longitude\":\"-15.3227\"},\"timezone\":{\"offset\":\"-9:00\",\"description\":\"Alaska\"}},\"email\":\"joan.garrido@example.com\",\"login\":{\"uuid\":\"851dd9fa-40d3-4cfc-85b1-d302d5a58d40\",\"username\":\"sadbutterfly859\",\"password\":\"ffff\",\"salt\":\"qc2mW8Wr\",\"md5\":\"98fe12899614b20a12d9c15b0a739482\",\"sha1\":\"1172afdd0bf915d77e0951211bf5928beeb14171\",\"sha256\":\"20a9448a2c9bef080358b11bf4d2e360a1ad034e319937252019337e83d6db55\"},\"dob\":{\"date\":\"1957-03-28T10:21:05.762Z\",\"age\":63},\"registered\":{\"date\":\"2002-11-09T07:43:27.709Z\",\"age\":18},\"phone\":\"983-635-820\",\"cell\":\"615-699-626\",\"id\":{\"name\":\"DNI\",\"value\":\"43042234-X\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/15.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/15.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/15.jpg\"},\"nat\":\"ES\"}"], ["created_at", "2020-09-27 18:59:08.481157"], ["updated_at", "2020-09-27 18:59:08.481157"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 96)
+Completed 200 OK in 1276ms (Views: 146.2ms | ActiveRecord: 4.5ms | Allocations: 6695)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:29:22 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Onni\",\"last\":\"Walli\"},\"location\":{\"street\":{\"number\":8622,\"name\":\"Mechelininkatu\"},\"city\":\"Rovaniemi\",\"state\":\"Southern Ostrobothnia\",\"country\":\"Finland\",\"postcode\":35305,\"coordinates\":{\"latitude\":\"-6.8743\",\"longitude\":\"-79.8147\"},\"timezone\":{\"offset\":\"+5:30\",\"description\":\"Bombay, Calcutta, Madras, New Delhi\"}},\"email\":\"onni.walli@example.com\",\"login\":{\"uuid\":\"bfbd6bc4-a614-43d6-aedd-786d778fb65f\",\"username\":\"ticklishswan541\",\"password\":\"tinkerbe\",\"salt\":\"MzfrnZzk\",\"md5\":\"a3c569ffcf1b36e92b4b4edb5c501f17\",\"sha1\":\"3cc2cf56ac0b643588128717d7dfa1f9da1a1099\",\"sha256\":\"c58ea4b9865a5f7f0825799fa703c45a549132d9f6bb58003c723b70ac7239a4\"},\"dob\":{\"date\":\"1974-05-12T05:01:46.821Z\",\"age\":46},\"registered\":{\"date\":\"2009-05-04T19:38:22.654Z\",\"age\":11},\"phone\":\"05-459-743\",\"cell\":\"049-139-14-40\",\"id\":{\"name\":\"HETU\",\"value\":\"NaNNA529undefined\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/83.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/83.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/83.jpg\"},\"nat\":\"FI\"}"], ["created_at", "2020-09-27 18:59:23.637491"], ["updated_at", "2020-09-27 18:59:23.637491"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 371)
+Completed 200 OK in 1808ms (Views: 594.0ms | ActiveRecord: 18.0ms | Allocations: 13711)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:31:57 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Lenni\",\"last\":\"Kivi\"},\"location\":{\"street\":{\"number\":1016,\"name\":\"Visiokatu\"},\"city\":\"Rautjärvi\",\"state\":\"Central Finland\",\"country\":\"Finland\",\"postcode\":32208,\"coordinates\":{\"latitude\":\"-9.3756\",\"longitude\":\"-30.7052\"},\"timezone\":{\"offset\":\"-2:00\",\"description\":\"Mid-Atlantic\"}},\"email\":\"lenni.kivi@example.com\",\"login\":{\"uuid\":\"8551fb03-fb6c-4b6c-8f87-94a6ad035940\",\"username\":\"lazyladybug628\",\"password\":\"webmaster\",\"salt\":\"0UyXQyYW\",\"md5\":\"e93f4f78ac631278976feec8e8eb9933\",\"sha1\":\"98d272bcc7bfd20ad6fe16ce481ac4ca57387cf2\",\"sha256\":\"c0bbcc43748af238cb2501b928b7799f8309d6805d397fc6f5a41251534b55ff\"},\"dob\":{\"date\":\"1960-02-06T02:57:47.512Z\",\"age\":60},\"registered\":{\"date\":\"2014-03-26T01:08:41.745Z\",\"age\":6},\"phone\":\"07-802-362\",\"cell\":\"040-054-85-71\",\"id\":{\"name\":\"HETU\",\"value\":\"NaNNA095undefined\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/41.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/41.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/41.jpg\"},\"nat\":\"FI\"}"], ["created_at", "2020-09-27 19:01:59.017272"], ["updated_at", "2020-09-27 19:01:59.017272"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (14.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 96)
+Completed 200 OK in 1676ms (Views: 329.6ms | ActiveRecord: 17.0ms | Allocations: 6684)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:32:01 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Dale\",\"last\":\"Riley\"},\"location\":{\"street\":{\"number\":8805,\"name\":\"Spring St\"},\"city\":\"Townsville\",\"state\":\"Western Australia\",\"country\":\"Australia\",\"postcode\":9539,\"coordinates\":{\"latitude\":\"-80.5756\",\"longitude\":\"-38.9131\"},\"timezone\":{\"offset\":\"-6:00\",\"description\":\"Central Time (US \\u0026 Canada), Mexico City\"}},\"email\":\"dale.riley@example.com\",\"login\":{\"uuid\":\"3c3ecde8-0a74-49d1-9f8e-b69a39c7fb29\",\"username\":\"orangetiger725\",\"password\":\"windows1\",\"salt\":\"dNErMYgM\",\"md5\":\"a9979ecf8c8c1e085f88c81b782f26b8\",\"sha1\":\"bb5499173a0e5c0a49a58e3f25b4a15be1fe0b42\",\"sha256\":\"b374a7088293f9c2ee6040314f74bbe4d340edce283d5e326744c9d984c05410\"},\"dob\":{\"date\":\"1967-10-25T05:38:04.153Z\",\"age\":53},\"registered\":{\"date\":\"2012-06-06T08:58:09.631Z\",\"age\":8},\"phone\":\"01-5749-6154\",\"cell\":\"0454-604-333\",\"id\":{\"name\":\"TFN\",\"value\":\"591159257\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/62.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/62.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/62.jpg\"},\"nat\":\"AU\"}"], ["created_at", "2020-09-27 19:02:03.523466"], ["updated_at", "2020-09-27 19:02:03.523466"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 96)
+Completed 200 OK in 1815ms (Views: 224.3ms | ActiveRecord: 10.9ms | Allocations: 6701)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:39:18 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Miss\",\"first\":\"Teresa\",\"last\":\"Ellis\"},\"location\":{\"street\":{\"number\":3934,\"name\":\"Brown Terrace\"},\"city\":\"Detroit\",\"state\":\"Arkansas\",\"country\":\"United States\",\"postcode\":79820,\"coordinates\":{\"latitude\":\"80.7809\",\"longitude\":\"13.2106\"},\"timezone\":{\"offset\":\"+8:00\",\"description\":\"Beijing, Perth, Singapore, Hong Kong\"}},\"email\":\"teresa.ellis@example.com\",\"login\":{\"uuid\":\"e34d6031-cfd2-4675-a8f4-4067929b45e3\",\"username\":\"crazyfish120\",\"password\":\"veronika\",\"salt\":\"0YkyCwyF\",\"md5\":\"52ba966b9fc24d5437fde5f0b9363d60\",\"sha1\":\"07a8b90acfcc607decc5c4172840574d8ce6c835\",\"sha256\":\"5f119094e71288250086be8b30e8cb69480b00f480a8a8b38fa350978ef64f1a\"},\"dob\":{\"date\":\"1966-12-06T12:12:06.067Z\",\"age\":54},\"registered\":{\"date\":\"2010-09-03T10:32:14.679Z\",\"age\":10},\"phone\":\"(167)-338-2827\",\"cell\":\"(982)-309-0069\",\"id\":{\"name\":\"SSN\",\"value\":\"292-30-7616\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/60.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/60.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/60.jpg\"},\"nat\":\"US\"}"], ["created_at", "2020-09-27 19:09:20.352270"], ["updated_at", "2020-09-27 19:09:20.352270"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 95)
+Completed 200 OK in 1524ms (Views: 154.9ms | ActiveRecord: 8.7ms | Allocations: 6703)
+
+
+Started GET "/" for ::1 at 2020-09-28 00:39:35 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/mnt/c/Users/xXx/Documents/shared/wsl-project/testChall/app/controllers/home_controller.rb:21: syntax error, unexpected '}', expecting `then' or ';' or '\n'
+...e['data']['gender'] == 'male' }
+...                              ^
+):
+  
+app/controllers/home_controller.rb:21: syntax error, unexpected '}', expecting `then' or ';' or '\n'
+app/controllers/home_controller.rb:21: syntax error, unexpected '}', expecting `then' or ';' or '\n'
+app/controllers/home_controller.rb:21: syntax error, unexpected '}', expecting `then' or ';' or '\n'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(497714478235191315)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200927182454)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.9ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200927182454"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(497714478235191315)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(497714478235191315)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200927182454)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "data" json DEFAULT '"{}"' NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200927182454"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(497714478235191315)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-09-28 00:40:21 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/mnt/c/Users/xXx/Documents/shared/wsl-project/testChall/app/controllers/home_controller.rb:21: syntax error, unexpected '}', expecting `then' or ';' or '\n'
+...e['data']['gender'] == 'male' }
+...                              ^
+):
+  
+app/controllers/home_controller.rb:21: syntax error, unexpected '}', expecting `then' or ';' or '\n'
+app/controllers/home_controller.rb:21: syntax error, unexpected '}', expecting `then' or ';' or '\n'
+app/controllers/home_controller.rb:21: syntax error, unexpected '}', expecting `then' or ';' or '\n'
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:40:51 +0530
+  
+ActionController::RoutingError (uninitialized constant HomeController):
+  
+actionpack (6.0.3.3) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:41:19 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Wade\",\"last\":\"Patterson\"},\"location\":{\"street\":{\"number\":2263,\"name\":\"Daisy Dr\"},\"city\":\"El Paso\",\"state\":\"Missouri\",\"country\":\"United States\",\"postcode\":61893,\"coordinates\":{\"latitude\":\"87.1870\",\"longitude\":\"-29.9952\"},\"timezone\":{\"offset\":\"-4:00\",\"description\":\"Atlantic Time (Canada), Caracas, La Paz\"}},\"email\":\"wade.patterson@example.com\",\"login\":{\"uuid\":\"fa432479-3143-4cc1-ad10-315bf0172849\",\"username\":\"beautifulbird311\",\"password\":\"smokin\",\"salt\":\"mfpnXWf4\",\"md5\":\"5c31b56352028e668f9ad5be6cea0bee\",\"sha1\":\"6a9bfc105b51d5208f53d53f0522606431b70f4a\",\"sha256\":\"8289493ec7c8a58a7cf4a83678f5b3a8e1fb724718c028945c599849c3dd845c\"},\"dob\":{\"date\":\"1948-10-27T17:39:31.396Z\",\"age\":72},\"registered\":{\"date\":\"2008-01-24T19:49:26.578Z\",\"age\":12},\"phone\":\"(900)-415-2522\",\"cell\":\"(714)-922-7337\",\"id\":{\"name\":\"SSN\",\"value\":\"126-51-8274\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/69.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/69.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/69.jpg\"},\"nat\":\"US\"}"], ["created_at", "2020-09-27 19:11:21.027912"], ["updated_at", "2020-09-27 19:11:21.027912"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 371)
+Completed 200 OK in 1978ms (Views: 531.4ms | ActiveRecord: 9.5ms | Allocations: 13728)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:41:33 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Enrico\",\"last\":\"Van Vessem\"},\"location\":{\"street\":{\"number\":4325,\"name\":\"Frankate\"},\"city\":\"Den Ham Ov\",\"state\":\"Noord-Holland\",\"country\":\"Netherlands\",\"postcode\":55775,\"coordinates\":{\"latitude\":\"39.8677\",\"longitude\":\"-67.7256\"},\"timezone\":{\"offset\":\"+5:00\",\"description\":\"Ekaterinburg, Islamabad, Karachi, Tashkent\"}},\"email\":\"enrico.vanvessem@example.com\",\"login\":{\"uuid\":\"4ea68298-4ae4-4b28-8f44-eea20d3eeb47\",\"username\":\"crazyfish932\",\"password\":\"zhai\",\"salt\":\"rN6pTkFY\",\"md5\":\"b101cf99be7c6458df9d9eb8694839fc\",\"sha1\":\"7d79982dd818c1a1c3d38c8a8322035013dd7b2a\",\"sha256\":\"c246f4a189d6861506082ec128d3a59688b3853b0a768b893d936787b6d62996\"},\"dob\":{\"date\":\"1993-09-13T06:35:35.274Z\",\"age\":27},\"registered\":{\"date\":\"2013-09-12T00:25:26.934Z\",\"age\":7},\"phone\":\"(082)-997-2490\",\"cell\":\"(581)-266-3732\",\"id\":{\"name\":\"BSN\",\"value\":\"85353267\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/18.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/18.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/18.jpg\"},\"nat\":\"NL\"}"], ["created_at", "2020-09-27 19:11:34.546203"], ["updated_at", "2020-09-27 19:11:34.546203"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 96)
+Completed 200 OK in 1280ms (Views: 127.1ms | ActiveRecord: 10.7ms | Allocations: 6698)
+
+
+Started GET "/" for ::1 at 2020-09-28 00:42:09 +0530
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"محمدعلی\",\"last\":\"احمدی\"},\"location\":{\"street\":{\"number\":2948,\"name\":\"یادگار امام\"},\"city\":\"ساری\",\"state\":\"مازندران\",\"country\":\"Iran\",\"postcode\":12668,\"coordinates\":{\"latitude\":\"31.6301\",\"longitude\":\"-17.1943\"},\"timezone\":{\"offset\":\"-2:00\",\"description\":\"Mid-Atlantic\"}},\"email\":\"mhmdaaly.hmdy@example.com\",\"login\":{\"uuid\":\"c054f7a0-1039-42a1-88fb-49ad7b471d1e\",\"username\":\"whitepanda338\",\"password\":\"lucky7\",\"salt\":\"gamMiOgX\",\"md5\":\"634b9b94dd6536ec669bd75d08e7dcde\",\"sha1\":\"a03725a24e6bebdd83e648b16e923aba97e99b23\",\"sha256\":\"e6e378eb737b6e177b46070b7ce8866823077878e6f351d9375bb4b1b1acae8b\"},\"dob\":{\"date\":\"1977-06-11T23:45:45.329Z\",\"age\":43},\"registered\":{\"date\":\"2013-09-28T04:05:34.735Z\",\"age\":7},\"phone\":\"047-34080892\",\"cell\":\"0914-754-8709\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/81.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/81.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/81.jpg\"},\"nat\":\"IR\"}"], ["created_at", "2020-09-27 19:12:10.898744"], ["updated_at", "2020-09-27 19:12:10.898744"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 279)
+Completed 200 OK in 1948ms (Views: 412.9ms | ActiveRecord: 19.3ms | Allocations: 13900)
+
+
+Started GET "/" for ::1 at 2020-09-28 00:42:14 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Angel\",\"last\":\"Garza\"},\"location\":{\"street\":{\"number\":157,\"name\":\"Richmond Road\"},\"city\":\"Cardiff\",\"state\":\"Northamptonshire\",\"country\":\"United Kingdom\",\"postcode\":\"P0 9AZ\",\"coordinates\":{\"latitude\":\"11.1676\",\"longitude\":\"-143.0878\"},\"timezone\":{\"offset\":\"-3:30\",\"description\":\"Newfoundland\"}},\"email\":\"angel.garza@example.com\",\"login\":{\"uuid\":\"0440a2ac-1ce4-4c5b-ad8e-1da0d826e6c8\",\"username\":\"lazytiger191\",\"password\":\"spartan\",\"salt\":\"hV3rUwTl\",\"md5\":\"f848c80e5a480c82cc4031ac6445be92\",\"sha1\":\"aa95107ab7908c2dc07ec2bfb3e43cde7b5b365f\",\"sha256\":\"8d1bb5362cf782f5bbdb0c1d635bb078f7b9e223e8860a9c6e5a17a0894edc33\"},\"dob\":{\"date\":\"1990-07-19T17:04:13.250Z\",\"age\":30},\"registered\":{\"date\":\"2014-01-04T05:14:23.711Z\",\"age\":6},\"phone\":\"016977 6302\",\"cell\":\"0714-302-101\",\"id\":{\"name\":\"NINO\",\"value\":\"CL 18 33 05 L\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/2.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/2.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/2.jpg\"},\"nat\":\"GB\"}"], ["created_at", "2020-09-27 19:12:15.860641"], ["updated_at", "2020-09-27 19:12:15.860641"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (14.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 1260ms (Views: 147.3ms | ActiveRecord: 16.5ms | Allocations: 6905)
+
+
+Started GET "/" for ::1 at 2020-09-28 00:42:18 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Niklas\",\"last\":\"Rautio\"},\"location\":{\"street\":{\"number\":5515,\"name\":\"Itsenäisyydenkatu\"},\"city\":\"Rauma\",\"state\":\"Päijät-Häme\",\"country\":\"Finland\",\"postcode\":85380,\"coordinates\":{\"latitude\":\"-10.8791\",\"longitude\":\"-111.8044\"},\"timezone\":{\"offset\":\"0:00\",\"description\":\"Western Europe Time, London, Lisbon, Casablanca\"}},\"email\":\"niklas.rautio@example.com\",\"login\":{\"uuid\":\"ac784b9d-e97d-4870-9252-dfa6491d607d\",\"username\":\"greendog851\",\"password\":\"bigal\",\"salt\":\"4JDZFEbK\",\"md5\":\"9b6a71b8dc494bf784bbcec6e7e2a20d\",\"sha1\":\"0a94d72ade6fe2cfbc2e5f18c41004622aa84ed4\",\"sha256\":\"b0c5bb10f3c7847de268a0e8f065feef485e9733ee1c44d09c354be7498c13a5\"},\"dob\":{\"date\":\"1998-06-14T07:15:12.824Z\",\"age\":22},\"registered\":{\"date\":\"2013-04-05T10:05:23.911Z\",\"age\":7},\"phone\":\"04-618-404\",\"cell\":\"048-074-80-91\",\"id\":{\"name\":\"HETU\",\"value\":\"NaNNA991undefined\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/39.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/39.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/39.jpg\"},\"nat\":\"FI\"}"], ["created_at", "2020-09-27 19:12:19.343718"], ["updated_at", "2020-09-27 19:12:19.343718"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 5)
+Completed 200 OK in 1233ms (Views: 232.9ms | ActiveRecord: 12.8ms | Allocations: 6900)
+
+
+Started GET "/" for ::1 at 2020-09-28 00:42:39 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (2.3ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Emilio\",\"last\":\"Bravo\"},\"location\":{\"street\":{\"number\":8293,\"name\":\"Calle Covadonga\"},\"city\":\"Bilbao\",\"state\":\"Cataluña\",\"country\":\"Spain\",\"postcode\":60896,\"coordinates\":{\"latitude\":\"-16.0706\",\"longitude\":\"-134.0650\"},\"timezone\":{\"offset\":\"+3:30\",\"description\":\"Tehran\"}},\"email\":\"emilio.bravo@example.com\",\"login\":{\"uuid\":\"419d3269-ed03-4231-92fa-13bfd8fa573b\",\"username\":\"yellowostrich157\",\"password\":\"bigbooty\",\"salt\":\"4ZamjnfM\",\"md5\":\"5aeb901deecb77e180e1928c3e0d524a\",\"sha1\":\"a4d8e41c5de9393fbe292fd05d8878db40a2f305\",\"sha256\":\"641574dfb34384ce71c05dca794b95d20589e48c5e24c7706fb04b77de4603da\"},\"dob\":{\"date\":\"1956-01-16T15:35:30.860Z\",\"age\":64},\"registered\":{\"date\":\"2015-03-24T19:06:30.164Z\",\"age\":5},\"phone\":\"985-963-427\",\"cell\":\"624-920-555\",\"id\":{\"name\":\"DNI\",\"value\":\"15385453-J\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/98.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/98.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/98.jpg\"},\"nat\":\"ES\"}"], ["created_at", "2020-09-27 19:12:41.384033"], ["updated_at", "2020-09-27 19:12:41.384033"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:13:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 371)
+Completed 200 OK in 100816ms (Views: 436.4ms | ActiveRecord: 38.5ms | Allocations: 116062)
+
+
+Started GET "/" for ::1 at 2020-09-28 00:44:24 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"آرتين\",\"last\":\"احمدی\"},\"location\":{\"street\":{\"number\":7414,\"name\":\"نام قدیم میدان های تهران\"},\"city\":\"رشت\",\"state\":\"لرستان\",\"country\":\"Iran\",\"postcode\":14090,\"coordinates\":{\"latitude\":\"28.4145\",\"longitude\":\"-105.5859\"},\"timezone\":{\"offset\":\"+9:30\",\"description\":\"Adelaide, Darwin\"}},\"email\":\"artyn.hmdy@example.com\",\"login\":{\"uuid\":\"00ebd690-5cab-4ac5-9b31-1e6ec0c2643c\",\"username\":\"brownbutterfly178\",\"password\":\"reggae\",\"salt\":\"tVOROWwf\",\"md5\":\"07c72bb18cf56502c9141de7e3b6bf27\",\"sha1\":\"db8b37e883005e1571066498bac89c6f7d35bf0b\",\"sha256\":\"f53566500bf9012ab691c8b85b0e84d43873754c77ff8baf0f90b531c5ddc165\"},\"dob\":{\"date\":\"1992-03-27T13:28:05.734Z\",\"age\":28},\"registered\":{\"date\":\"2009-05-03T13:25:07.909Z\",\"age\":11},\"phone\":\"070-71321777\",\"cell\":\"0973-222-2547\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/91.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/91.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/91.jpg\"},\"nat\":\"IR\"}"], ["created_at", "2020-09-27 19:14:26.520558"], ["updated_at", "2020-09-27 19:14:26.520558"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (14.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:13:in `index'
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:44:45 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Roope\",\"last\":\"Seppala\"},\"location\":{\"street\":{\"number\":9464,\"name\":\"Tehtaankatu\"},\"city\":\"Ylitornio\",\"state\":\"Southern Ostrobothnia\",\"country\":\"Finland\",\"postcode\":65300,\"coordinates\":{\"latitude\":\"-12.1422\",\"longitude\":\"-97.0822\"},\"timezone\":{\"offset\":\"+4:00\",\"description\":\"Abu Dhabi, Muscat, Baku, Tbilisi\"}},\"email\":\"roope.seppala@example.com\",\"login\":{\"uuid\":\"cd9fefb9-1558-4324-ba94-2b4023fe7778\",\"username\":\"organicfrog236\",\"password\":\"peanuts\",\"salt\":\"gttGnkqm\",\"md5\":\"2e332b285d73fc974a6f4c3e394a7918\",\"sha1\":\"d9802db9cec4e3686e1f340368c98af37265f540\",\"sha256\":\"79c107c98d266daaec91b2d010c86e13ab8cc9d1c6886e161781ae3c641337df\"},\"dob\":{\"date\":\"1982-05-15T21:22:12.716Z\",\"age\":38},\"registered\":{\"date\":\"2007-06-21T03:42:57.045Z\",\"age\":13},\"phone\":\"03-298-444\",\"cell\":\"045-246-06-48\",\"id\":{\"name\":\"HETU\",\"value\":\"NaNNA489undefined\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/1.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/1.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/1.jpg\"},\"nat\":\"FI\"}"], ["created_at", "2020-09-27 19:14:47.717448"], ["updated_at", "2020-09-27 19:14:47.717448"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:14:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 371)
+Completed 200 OK in 18494ms (Views: 429.2ms | ActiveRecord: 32.5ms | Allocations: 146506)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:45:55 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Elmer\",\"last\":\"Shelton\"},\"location\":{\"street\":{\"number\":9566,\"name\":\"George Street\"},\"city\":\"York\",\"state\":\"Bedfordshire\",\"country\":\"United Kingdom\",\"postcode\":\"HB3 2WX\",\"coordinates\":{\"latitude\":\"6.3819\",\"longitude\":\"-86.3317\"},\"timezone\":{\"offset\":\"+3:00\",\"description\":\"Baghdad, Riyadh, Moscow, St. Petersburg\"}},\"email\":\"elmer.shelton@example.com\",\"login\":{\"uuid\":\"4d9f2f0e-3bd6-47b8-84ad-c2b91e166413\",\"username\":\"purplesnake790\",\"password\":\"corona\",\"salt\":\"nS1xBSGb\",\"md5\":\"a2f04fb72a3d99dfd23754359994b7aa\",\"sha1\":\"17ad092740e984f1468da484851252dc4d2c12f3\",\"sha256\":\"07eb9edf145bb42a2433fc471fbd23d3531707e37493760477a4748fa65dbd62\"},\"dob\":{\"date\":\"1951-09-26T21:45:38.853Z\",\"age\":69},\"registered\":{\"date\":\"2014-06-29T22:50:58.420Z\",\"age\":6},\"phone\":\"013873 26874\",\"cell\":\"0756-511-124\",\"id\":{\"name\":\"NINO\",\"value\":\"PL 34 12 26 T\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/56.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/56.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/56.jpg\"},\"nat\":\"GB\"}"], ["created_at", "2020-09-27 19:15:58.388005"], ["updated_at", "2020-09-27 19:15:58.388005"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:14:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 371)
+Completed 200 OK in 217394ms (Views: 475.4ms | ActiveRecord: 30.9ms | Allocations: 364559)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:49:58 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Leo\",\"last\":\"Young\"},\"location\":{\"street\":{\"number\":7399,\"name\":\"Disputed Rd\"},\"city\":\"Stratford\",\"state\":\"Northwest Territories\",\"country\":\"Canada\",\"postcode\":\"H6Z 9U7\",\"coordinates\":{\"latitude\":\"-58.7496\",\"longitude\":\"-52.8029\"},\"timezone\":{\"offset\":\"+9:30\",\"description\":\"Adelaide, Darwin\"}},\"email\":\"leo.young@example.com\",\"login\":{\"uuid\":\"8feb6d62-2011-4737-a1ba-05e919ec4cb2\",\"username\":\"silverostrich148\",\"password\":\"abbott\",\"salt\":\"lbffCoEi\",\"md5\":\"0e89cc616fea9b45d0fdec370e0903c9\",\"sha1\":\"6b4b9508733c00bd113d98bbcdfe3a2358aff0e1\",\"sha256\":\"4f049fd2c0057fd43dc034b3e14071522f44a189317c815f466dec20b18cbca7\"},\"dob\":{\"date\":\"1963-07-07T21:34:34.807Z\",\"age\":57},\"registered\":{\"date\":\"2017-11-08T00:57:11.375Z\",\"age\":3},\"phone\":\"169-728-7176\",\"cell\":\"122-345-6517\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/62.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/62.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/62.jpg\"},\"nat\":\"CA\"}"], ["created_at", "2020-09-27 19:19:59.913794"], ["updated_at", "2020-09-27 19:19:59.913794"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:17:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 371)
+Completed 200 OK in 68791ms (Views: 385.3ms | ActiveRecord: 18.1ms | Allocations: 181922)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:51:10 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 5)
+Completed 200 OK in 1375ms (Views: 300.2ms | ActiveRecord: 0.0ms | Allocations: 2716)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:51:16 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Nixon\",\"last\":\"Walker\"},\"location\":{\"street\":{\"number\":874,\"name\":\"Manchester Street\"},\"city\":\"Napier\",\"state\":\"Southland\",\"country\":\"New Zealand\",\"postcode\":75014,\"coordinates\":{\"latitude\":\"60.0397\",\"longitude\":\"-73.8246\"},\"timezone\":{\"offset\":\"+9:00\",\"description\":\"Tokyo, Seoul, Osaka, Sapporo, Yakutsk\"}},\"email\":\"nixon.walker@example.com\",\"login\":{\"uuid\":\"cce187ab-e317-47c9-9a13-4e76e4a23ef7\",\"username\":\"bigduck326\",\"password\":\"natalie1\",\"salt\":\"6nfCDXJu\",\"md5\":\"40ac304d553e20622afe0f39dca4df24\",\"sha1\":\"bc149b7ee20e1e4422a703700795e740bcfc954b\",\"sha256\":\"7afffb7882d12d6db8aa65a3b7b88c02d25df2a342dfe68a3328276bc4ff00c9\"},\"dob\":{\"date\":\"1992-10-05T10:14:48.118Z\",\"age\":28},\"registered\":{\"date\":\"2010-08-18T07:06:52.074Z\",\"age\":10},\"phone\":\"(926)-129-9465\",\"cell\":\"(501)-754-7963\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/38.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/38.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/38.jpg\"},\"nat\":\"NZ\"}"], ["created_at", "2020-09-27 19:21:17.339396"], ["updated_at", "2020-09-27 19:21:17.339396"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:17:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 96)
+Completed 200 OK in 2646ms (Views: 118.5ms | ActiveRecord: 17.1ms | Allocations: 24625)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:51:22 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Mrs\",\"first\":\"Chloe\",\"last\":\"Lewis\"},\"location\":{\"street\":{\"number\":5060,\"name\":\"Lambton Quay\"},\"city\":\"Blenheim\",\"state\":\"Waikato\",\"country\":\"New Zealand\",\"postcode\":16360,\"coordinates\":{\"latitude\":\"63.6388\",\"longitude\":\"135.6501\"},\"timezone\":{\"offset\":\"+5:00\",\"description\":\"Ekaterinburg, Islamabad, Karachi, Tashkent\"}},\"email\":\"chloe.lewis@example.com\",\"login\":{\"uuid\":\"376a871d-18c7-437a-8dfd-b3459250cd58\",\"username\":\"smallpeacock290\",\"password\":\"zhui\",\"salt\":\"IXEnDNp1\",\"md5\":\"2b3864e281adbb9d0073ec68705832d8\",\"sha1\":\"f0f58db6bab7d72173c3f9102c10a8b46ccc75ac\",\"sha256\":\"d37303831020bc7bd8d5da9d0801209b6e73c9821395f790ac75bc8b2fa9ff46\"},\"dob\":{\"date\":\"1959-03-22T13:39:59.981Z\",\"age\":61},\"registered\":{\"date\":\"2007-10-15T17:14:40.575Z\",\"age\":13},\"phone\":\"(130)-783-5801\",\"cell\":\"(406)-516-3190\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/54.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/54.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/54.jpg\"},\"nat\":\"NZ\"}"], ["created_at", "2020-09-27 19:21:23.429972"], ["updated_at", "2020-09-27 19:21:23.429972"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:17:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+Completed 200 OK in 1485ms (Views: 118.8ms | ActiveRecord: 11.8ms | Allocations: 24772)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:51:30 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Pedro\",\"last\":\"Lopez\"},\"location\":{\"street\":{\"number\":3793,\"name\":\"Calle de Pedro Bosch\"},\"city\":\"Granada\",\"state\":\"Cantabria\",\"country\":\"Spain\",\"postcode\":74719,\"coordinates\":{\"latitude\":\"-16.1244\",\"longitude\":\"-179.6528\"},\"timezone\":{\"offset\":\"+3:00\",\"description\":\"Baghdad, Riyadh, Moscow, St. Petersburg\"}},\"email\":\"pedro.lopez@example.com\",\"login\":{\"uuid\":\"d786954b-de9d-4cdd-8e46-9f20c10a3618\",\"username\":\"goldengorilla619\",\"password\":\"titman\",\"salt\":\"26K2VZ1d\",\"md5\":\"dcce5391773f9e449002cc787406442e\",\"sha1\":\"cba9e8da4fc47fc0021c8d40e3137602f3862bfd\",\"sha256\":\"cc16a6b893ccf2f2d17bf9640ca620397079baa4a5b0245a03cc7c72beda004b\"},\"dob\":{\"date\":\"1996-09-26T17:34:34.831Z\",\"age\":24},\"registered\":{\"date\":\"2004-06-01T20:28:29.230Z\",\"age\":16},\"phone\":\"970-062-415\",\"cell\":\"633-305-895\",\"id\":{\"name\":\"DNI\",\"value\":\"84368131-V\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/4.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/4.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/4.jpg\"},\"nat\":\"ES\"}"], ["created_at", "2020-09-27 19:21:32.086567"], ["updated_at", "2020-09-27 19:21:32.086567"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:17:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 95)
+Completed 200 OK in 10093ms (Views: 129.7ms | ActiveRecord: 12.5ms | Allocations: 42391)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:52:08 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Dennis\",\"last\":\"Young\"},\"location\":{\"street\":{\"number\":8418,\"name\":\"Stevens Creek Blvd\"},\"city\":\"Fort Lauderdale\",\"state\":\"Virginia\",\"country\":\"United States\",\"postcode\":26474,\"coordinates\":{\"latitude\":\"87.0615\",\"longitude\":\"-76.4587\"},\"timezone\":{\"offset\":\"+5:45\",\"description\":\"Kathmandu\"}},\"email\":\"dennis.young@example.com\",\"login\":{\"uuid\":\"3fbdc5e2-ebcb-4628-b21c-a2a5c783953b\",\"username\":\"bigpeacock663\",\"password\":\"bunny\",\"salt\":\"4UXSyjF7\",\"md5\":\"9bfe0fc59a510d1e0ee97a557dc3e274\",\"sha1\":\"32feb747c2219f1f6a014837fb5ee6b98d439195\",\"sha256\":\"b1534379716653894bd62bcddaee6f15b1ac47756773f7f24a6ce771fbe6d1fa\"},\"dob\":{\"date\":\"1952-02-22T04:43:59.053Z\",\"age\":68},\"registered\":{\"date\":\"2013-04-12T16:49:28.905Z\",\"age\":7},\"phone\":\"(745)-253-2663\",\"cell\":\"(919)-134-8686\",\"id\":{\"name\":\"SSN\",\"value\":\"979-59-4573\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/31.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/31.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/31.jpg\"},\"nat\":\"US\"}"], ["created_at", "2020-09-27 19:22:10.281241"], ["updated_at", "2020-09-27 19:22:10.281241"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:14:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 371)
+Completed 200 OK in 30926ms (Views: 588.7ms | ActiveRecord: 27.8ms | Allocations: 236749)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:54:19 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Julio\",\"last\":\"Fitzsimmons\"},\"location\":{\"street\":{\"number\":3948,\"name\":\"Ormond Quay\"},\"city\":\"Duleek\",\"state\":\"Dublin City\",\"country\":\"Ireland\",\"postcode\":72430,\"coordinates\":{\"latitude\":\"21.8978\",\"longitude\":\"-108.3853\"},\"timezone\":{\"offset\":\"-6:00\",\"description\":\"Central Time (US \\u0026 Canada), Mexico City\"}},\"email\":\"julio.fitzsimmons@example.com\",\"login\":{\"uuid\":\"9436953b-bae0-4f28-9eae-1ec5f2d18cb5\",\"username\":\"redtiger193\",\"password\":\"traffic\",\"salt\":\"SQ6b9iGJ\",\"md5\":\"68dc34d55fa04353217056cd9e9da7ac\",\"sha1\":\"eaa389c8bf1fd32df4dac6fdf02b8a9c13be68f3\",\"sha256\":\"a4e1dd0e3f77ccb3b37f34a15ec290b92eb3beaa66d075a04ccf421341859601\"},\"dob\":{\"date\":\"1995-03-24T06:33:34.779Z\",\"age\":25},\"registered\":{\"date\":\"2016-04-17T10:41:18.230Z\",\"age\":4},\"phone\":\"071-180-5773\",\"cell\":\"081-002-0351\",\"id\":{\"name\":\"PPS\",\"value\":\"5426716T\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/31.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/31.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/31.jpg\"},\"nat\":\"IE\"}"], ["created_at", "2020-09-27 19:24:20.514042"], ["updated_at", "2020-09-27 19:24:20.514042"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:14:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 372)
+Completed 200 OK in 1430ms (Views: 420.5ms | ActiveRecord: 22.5ms | Allocations: 15955)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:55:09 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Darren\",\"last\":\"Ramos\"},\"location\":{\"street\":{\"number\":6505,\"name\":\"St. John’S Road\"},\"city\":\"Plymouth\",\"state\":\"Humberside\",\"country\":\"United Kingdom\",\"postcode\":\"VZ7X 3GY\",\"coordinates\":{\"latitude\":\"15.8375\",\"longitude\":\"-25.2203\"},\"timezone\":{\"offset\":\"+6:00\",\"description\":\"Almaty, Dhaka, Colombo\"}},\"email\":\"darren.ramos@example.com\",\"login\":{\"uuid\":\"3bcaca8d-e256-44a2-9024-6b2e9e49a2a6\",\"username\":\"blackelephant448\",\"password\":\"753951\",\"salt\":\"3jwypMiJ\",\"md5\":\"1e45a0cc895a5171853d00c70970cd75\",\"sha1\":\"286f5510c07af7bc93fcc491abf9cca9d8ff6828\",\"sha256\":\"05275b6fed12553b8317a1639f07c869b1f9caa0f7f43b5aa5ec831db47ca5a1\"},\"dob\":{\"date\":\"1983-11-08T13:40:13.670Z\",\"age\":37},\"registered\":{\"date\":\"2005-03-03T00:42:42.948Z\",\"age\":15},\"phone\":\"01682 56163\",\"cell\":\"0726-877-660\",\"id\":{\"name\":\"NINO\",\"value\":\"BE 90 33 06 X\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/90.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/90.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/90.jpg\"},\"nat\":\"GB\"}"], ["created_at", "2020-09-27 19:25:10.403672"], ["updated_at", "2020-09-27 19:25:10.403672"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:14:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 404)
+Completed 200 OK in 1514ms (Views: 677.5ms | ActiveRecord: 14.4ms | Allocations: 16089)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:55:13 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 1005ms (Views: 160.0ms | ActiveRecord: 0.0ms | Allocations: 2715)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:55:15 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Miss\",\"first\":\"Kaitlin\",\"last\":\"Fox\"},\"location\":{\"street\":{\"number\":2617,\"name\":\"Killarney Road\"},\"city\":\"Newbridge\",\"state\":\"South Dublin\",\"country\":\"Ireland\",\"postcode\":27362,\"coordinates\":{\"latitude\":\"25.4202\",\"longitude\":\"81.4714\"},\"timezone\":{\"offset\":\"-2:00\",\"description\":\"Mid-Atlantic\"}},\"email\":\"kaitlin.fox@example.com\",\"login\":{\"uuid\":\"844645bd-3541-4700-90bc-afd7193af848\",\"username\":\"silvermouse992\",\"password\":\"pretty\",\"salt\":\"usgDdaZd\",\"md5\":\"71a6d4698110ca62738835c1ea20fe27\",\"sha1\":\"fea882f638eff0a7fbdde6fb627a655cd4bfe815\",\"sha256\":\"701c9e81839621aa6939022d1f22dd5dbeed966977ef3303c214585269a6d5d4\"},\"dob\":{\"date\":\"1991-08-29T03:13:26.998Z\",\"age\":29},\"registered\":{\"date\":\"2010-08-02T21:32:25.625Z\",\"age\":10},\"phone\":\"041-169-5252\",\"cell\":\"081-639-6067\",\"id\":{\"name\":\"PPS\",\"value\":\"3674564T\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/10.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/10.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/10.jpg\"},\"nat\":\"IE\"}"], ["created_at", "2020-09-27 19:25:16.371059"], ["updated_at", "2020-09-27 19:25:16.371059"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:14:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 100)
+Completed 200 OK in 955ms (Views: 129.4ms | ActiveRecord: 7.3ms | Allocations: 9067)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:55:18 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"female\",\"name\":{\"title\":\"Mrs\",\"first\":\"Flore\",\"last\":\"Brusse\"},\"location\":{\"street\":{\"number\":7649,\"name\":\"Jacob Schorerstraat\"},\"city\":\"Hoogersmilde\",\"state\":\"Zuid-Holland\",\"country\":\"Netherlands\",\"postcode\":79286,\"coordinates\":{\"latitude\":\"44.7741\",\"longitude\":\"149.7243\"},\"timezone\":{\"offset\":\"+3:00\",\"description\":\"Baghdad, Riyadh, Moscow, St. Petersburg\"}},\"email\":\"flore.brusse@example.com\",\"login\":{\"uuid\":\"41a8cd5f-cfc2-49f3-927f-0b8eb35b1b17\",\"username\":\"whitebird722\",\"password\":\"iamgod\",\"salt\":\"9XlM0m1l\",\"md5\":\"72b8b219e3808fe8a31341e090e36656\",\"sha1\":\"b1eea2ebcd1f932f6f52525578bfe2e048c31621\",\"sha256\":\"7dd83c1093b49f5cff0ffd3b9671ee5b2e5e3f971496d477e10c9dff8f940d9c\"},\"dob\":{\"date\":\"1975-01-22T08:08:39.197Z\",\"age\":45},\"registered\":{\"date\":\"2018-07-31T22:02:10.999Z\",\"age\":2},\"phone\":\"(237)-170-4994\",\"cell\":\"(029)-142-5135\",\"id\":{\"name\":\"BSN\",\"value\":\"17405598\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/68.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/68.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/68.jpg\"},\"nat\":\"NL\"}"], ["created_at", "2020-09-27 19:25:20.218272"], ["updated_at", "2020-09-27 19:25:20.218272"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:14:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 100)
+Completed 200 OK in 1361ms (Views: 119.2ms | ActiveRecord: 9.6ms | Allocations: 9188)
+
+
+Started GET "/" for 127.0.0.1 at 2020-09-28 00:55:22 +0530
+Processing by HomeController#index as HTML
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("data", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["data", "{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Simon\",\"last\":\"Benner\"},\"location\":{\"street\":{\"number\":5106,\"name\":\"Kirchplatz\"},\"city\":\"Rheinböllen\",\"state\":\"Niedersachsen\",\"country\":\"Germany\",\"postcode\":71047,\"coordinates\":{\"latitude\":\"-46.8380\",\"longitude\":\"-64.5379\"},\"timezone\":{\"offset\":\"+2:00\",\"description\":\"Kaliningrad, South Africa\"}},\"email\":\"simon.benner@example.com\",\"login\":{\"uuid\":\"d0888b8a-0179-406c-b66b-a2ae5505e25c\",\"username\":\"greenpanda695\",\"password\":\"gladiator\",\"salt\":\"cgEIdxYo\",\"md5\":\"4fd93f3a27c7fcbab109fe5a3269597a\",\"sha1\":\"d1614150901b97a9c052abf048d30f5e8f9b5ff7\",\"sha256\":\"1871738a2a8da1feb60578abb080963e6199321281424bf21f649ad129194714\"},\"dob\":{\"date\":\"1953-11-14T02:06:26.206Z\",\"age\":67},\"registered\":{\"date\":\"2013-03-29T18:52:00.686Z\",\"age\":7},\"phone\":\"0330-3913795\",\"cell\":\"0170-7016425\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/88.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/88.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/88.jpg\"},\"nat\":\"DE\"}"], ["created_at", "2020-09-27 19:25:23.101349"], ["updated_at", "2020-09-27 19:25:23.101349"]]
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/home_controller.rb:10:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/home_controller.rb:14:in `index'
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 100)
+Completed 200 OK in 1022ms (Views: 126.8ms | ActiveRecord: 5.5ms | Allocations: 9254)
+
+

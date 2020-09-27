@@ -1,0 +1,42 @@
+<% if @error %>
+	Error From API "Refresh the page"
+<% else %>
+Male:
+	<table border="1px">
+		<tr>
+			<td>Nationality</td>
+			<td>0-30</td>
+			<td>30-50</td>
+			<td>50 and above</td>
+		</tr>
+		<tr>
+			<td><%= @male.count %></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+Female:
+<table border="1px">
+		<tr>
+			<td>Nationality</td>
+			<td>0-30</td>
+			<td>30-50</td>
+			<td>50 and above</td>
+		</tr>
+		<tr>
+			<td><%= @female.count %></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	For Debug:
+	<%= @result["results"][0] %>
+<% end %>
+

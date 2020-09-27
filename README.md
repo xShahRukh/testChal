@@ -1,121 +1,24 @@
-As discussed sharing assignment below for the technical round, Please complete the assignment and push the code in git repository. 
+# README
 
-Request you to please share this assignment till Tomorrow 12th  August 2020 EOD. 
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-Build a REST API to generate a summary of user data as described below.
+Things you may want to cover:
 
- 
+* Ruby version
 
-User Information to be fetched from randomuser.me:
+* System dependencies
 
-{
+* Configuration
 
-      "gender": "male",
+* Database creation
 
-      "name": {
+* Database initialization
 
-        "title": "mr",
+* How to run the test suite
 
-        "first": "romain",
+* Services (job queues, cache servers, search engines, etc.)
 
-        "last": "hoogmoed"
+* Deployment instructions
 
-      },
-
-      "location": {
-
-        "street": "1861 jan pieterszoon coenstraat",
-
-        "city": "maasdriel",
-
-        "state": "zeeland",
-
-        "postcode": 69217
-
-      },
-
-      "email": "romain.hoogmoed@example.com",
-
-      "dob": "1983-07-14 07:29:45",
-
-      "registered": "2010-09-24 02:10:42",
-
-      "phone": "(656)-976-4980",
-
-      "cell": "(065)-247-9303",
-
-      "id": {
-
-        "name": "BSN",
-
-        "value": "04242023"
-
-      },
-
-      "nat": "NL"
-
-    }
-
- 
-
-Summarized Report based on Gender as shown below:
-
- 
-
-Male
-	
-
-Nationality
-	
-
-0-30
-	
-
-30-50
-	
-
-50 and above
-	
-
-NL
-	
-
-0
-	
-
-1
-	
-
-0
-				
-				
-
-Female
-	
-
-Nationality
-	
-
-0-30
-	
-
-30-50
-	
-
-50 and above
-	
-
-NL
-	
-
-0
-	
-
-1
-	
-
-0
-
- 
-
- 
+* ...
