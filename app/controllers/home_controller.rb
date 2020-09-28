@@ -9,8 +9,6 @@ class HomeController < ApplicationController
       @result = JSON.parse(data)
       User.create(data: @result["results"][0])
 
-      users = User.all
-
       @male = User.where("data->>'gender' = ?", "male")
       @female = User.where("data->>'gender' = ?", "female")
 
