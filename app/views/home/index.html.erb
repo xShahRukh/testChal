@@ -12,9 +12,9 @@ Male:
 		</tr>
 		<tr>
 			<td><%= @male.count %></td>
-			<td><%= @male.where("data->'dob'->>'age' > ?", "0").where("data->'dob'->>'age' < ?", "31") %></td>
-			<td><%= @male.where("data->'dob'->>'age' > ?", "30").where("data->'dob'->>'age' < ?", "51") %></td>
-			<td><%= @male.where("data->'dob'->>'age' > ?", "50") %></td>
+			<td><%= (@male.where("data->'dob'->>'age' > ?", "0").where("data->'dob'->>'age' < ?", "31")).count %></td>
+			<td><%= (@male.where("data->'dob'->>'age' > ?", "30").where("data->'dob'->>'age' < ?", "51")).count %></td>
+			<td><%= (@male.where("data->'dob'->>'age' > ?", "50")).count %></td>
 		</tr>
 	</table>
 Female:
@@ -27,9 +27,9 @@ Female:
 		</tr>
 		<tr>
 			<td><%= @female.count %></td>
-			<td><%= @female.where("data->'dob'->>'age' > ?", "0").where("data->'dob'->>'age' < ?", "31") %></td>
-			<td><%= @female.where("data->'dob'->>'age' > ?", "30").where("data->'dob'->>'age' < ?", "51") %></td>
-			<td><%= @female.where("data->'dob'->>'age' > ?", "50") %></td>
+			<td><%= (@female.where("data->'dob'->>'age' > ?", "0").where("data->'dob'->>'age' < ?", "31")).count %></td>
+			<td><%= (@female.where("data->'dob'->>'age' > ?", "30").where("data->'dob'->>'age' < ?", "51")).count %></td>
+			<td><%= (@female.where("data->'dob'->>'age' > ?", "50")).count %></td>
 		</tr>
 	</table>
 	<br>
