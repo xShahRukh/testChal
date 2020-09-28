@@ -11,8 +11,8 @@ class HomeController < ApplicationController
 
       users = User.all
 
-      @male = users.select { |e| e['data']['gender'] == 'male' } 
-      @female = users.select { |e| e['data']['gender'] == 'female' } 
+      @male = User.where("data->>'gender' = ?", "male")
+      @female = User.where("data->>'gender' = ?", "female")
 
     rescue Exception => e
       @error = e
